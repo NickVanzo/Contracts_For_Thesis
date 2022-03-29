@@ -1,0 +1,7 @@
+await xx_d.safeMint("0xeac9852225Aa941Fa8EA2E949e733e2329f42195","QmQLVp88bgYvpgYh9aPowHKSQ3RCaT9s472yoirgwXyDaW")
+await xx.safeMint("0xeac9852225Aa941Fa8EA2E949e733e2329f42195","QmQLVp88bgYvpgYh9aPowHKSQ3RCaT9s472yoirgwXyDaW")
+await xx_d.burn(0)
+const xx_d = xx.attach("0xD26F8df7147aDd0dF6b50Db79727420B0d898313")
+const xx = await ethers.getContractFactory("MonstersOnTheWayCards")
+const x = await ethers.getContractFactory("MonstersOnTheWayCards")
+const x = await ethers.getContractFactory("0xD26F8df7147aDd0dF6b50Db79727420B0d898313")
