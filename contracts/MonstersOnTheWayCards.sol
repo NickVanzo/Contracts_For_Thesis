@@ -147,4 +147,8 @@ contract MonstersOnTheWayCards is
     function getSmartContractAddr() public view returns (address) {
         return _addressOfSmartContractOfTokens;
     }
+    
+    function setAddressOfTokenContract(address newAddress) public onlyOwner() {
+        _addressOfSmartContractOfTokens = newAddress;
+    }
 }

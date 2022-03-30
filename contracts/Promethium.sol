@@ -27,6 +27,7 @@ contract Promethium is
         __ERC20_init("Promethium", "PRM");
         __ERC20Burnable_init();
         __Pausable_init();
+        __Ownable_init();
         _DECIMALS = 6;
         _MAX_NUMBER_OF_TOKENS_MINTABLE = 21000000000000;
         
