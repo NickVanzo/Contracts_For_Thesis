@@ -4,10 +4,10 @@ pragma solidity ^0.8.2;
 import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721BurnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol";
 import "./Promethium.sol";
 
@@ -16,8 +16,8 @@ contract MonstersOnTheWayCards is
     ERC721Upgradeable,
     ERC721URIStorageUpgradeable,
     PausableUpgradeable,
-    OwnableUpgradeable,
-    ERC721BurnableUpgradeable
+    ERC721BurnableUpgradeable,
+    OwnableUpgradeable
 {
     using CountersUpgradeable for CountersUpgradeable.Counter;
     using SafeMathUpgradeable for uint256;
@@ -25,21 +25,23 @@ contract MonstersOnTheWayCards is
     CountersUpgradeable.Counter private _tokenIdCounter;
 
     uint256 private _fee;
-    address payable _owner;
+    address payable _addressRetriever;
     uint256 private _balanceOfContract;
     string[] private _bookOfUris;
     address private _addressOfSmartContractOfTokens;
 
-    function initialize(address addressOfPromethium) public initializer {
+    function initialize(address addressOfPromethium, address newOwner)
+        public
+        initializer
+    {
         __ERC721_init("Cards", "CRD");
         __ERC721URIStorage_init();
         __Pausable_init();
-        __Ownable_init();
         __ERC721Burnable_init();
-
+        __Ownable_init();
         _addressOfSmartContractOfTokens = addressOfPromethium;
         _fee = 3000000000000000;
-        _owner = payable(_msgSender());
+        _addressRetriever = payable(newOwner);
     }
 
     function _baseURI() internal pure override returns (string memory) {
@@ -122,7 +124,7 @@ contract MonstersOnTheWayCards is
         return super.tokenURI(tokenId);
     }
 
-    function getFee() public view returns(uint256) {
+    function getFee() public view returns (uint256) {
         return _fee;
     }
 
@@ -130,7 +132,19 @@ contract MonstersOnTheWayCards is
         _fee = fee;
     }
 
-    function getCids() public view returns(string[] memory) {
+    function getCids() public view returns (string[] memory) {
         return _bookOfUris;
+    }
+
+    function getRetriever() public view returns (address) {
+        return _addressRetriever;
+    }
+
+    function setRetriever(address newRetrieve) public onlyOwner {
+        _addressRetriever = payable(newRetrieve);
+    }
+
+    function getSmartContractAddr() public view returns (address) {
+        return _addressOfSmartContractOfTokens;
     }
 }

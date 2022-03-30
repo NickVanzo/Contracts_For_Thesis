@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/contracts/MonstersOnTheWayCards.sol": {
-      "lastModificationDate": 1648587780387,
-      "contentHash": "540adab23593de394fbbba5f12ed9966",
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/contracts/MonstersOnTheWayCards.sol": {
+      "lastModificationDate": 1648624942640,
+      "contentHash": "3386b9c4b00d472feb2eadc08516b9ba",
       "sourceName": "contracts/MonstersOnTheWayCards.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -33,10 +33,10 @@
         "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol",
         "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol",
         "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
-        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
         "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721BurnableUpgradeable.sol",
         "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
         "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
         "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol",
         "./Promethium.sol"
       ],
@@ -47,7 +47,7 @@
         "MonstersOnTheWayCards"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol": {
       "lastModificationDate": 1648589177512,
       "contentHash": "8e52b614f6b430aa55873a311e62a8fb",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol",
@@ -92,7 +92,7 @@
         "ERC721Upgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol": {
       "lastModificationDate": 1648589177512,
       "contentHash": "2b09eda73a84a74195c040802c951bb6",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721URIStorageUpgradeable.sol",
@@ -131,7 +131,7 @@
         "ERC721URIStorageUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol": {
       "lastModificationDate": 1648589177517,
       "contentHash": "f5233d9eeebd5f0b4633650939e72426",
       "sourceName": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
@@ -170,46 +170,7 @@
         "PausableUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
-      "lastModificationDate": 1648589177517,
-      "contentHash": "11b77de3cb69dfc6b342ec87bd09cbdd",
-      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.2",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../utils/ContextUpgradeable.sol",
-        "../proxy/utils/Initializable.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "OwnableUpgradeable"
-      ]
-    },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721BurnableUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721BurnableUpgradeable.sol": {
       "lastModificationDate": 1648589177510,
       "contentHash": "df61456dff376386cff21a94d314bf5f",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721BurnableUpgradeable.sol",
@@ -249,7 +210,7 @@
         "ERC721BurnableUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
       "lastModificationDate": 1648589177516,
       "contentHash": "49c8ad51a559f6dda13d35874f7dfdb9",
       "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
@@ -287,7 +248,7 @@
         "Initializable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol": {
       "lastModificationDate": 1648589177506,
       "contentHash": "2e908c762a799baea365e68a50500e2c",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol",
@@ -323,7 +284,7 @@
         "CountersUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol": {
       "lastModificationDate": 1648589177518,
       "contentHash": "79fabca470327c2d2b7367abeef7e097",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol",
@@ -359,9 +320,9 @@
         "SafeMathUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/contracts/Promethium.sol": {
-      "lastModificationDate": 1648587147362,
-      "contentHash": "901e644d19cc496c72a919c9e3499577",
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/contracts/Promethium.sol": {
+      "lastModificationDate": 1648622520621,
+      "contentHash": "0cee719f85c2d743f0a78877b3886fff",
       "sourceName": "contracts/Promethium.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -391,9 +352,9 @@
         "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
         "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol",
         "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
-        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
         "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
-        "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol"
+        "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol"
       ],
       "versionPragmas": [
         "^0.8.2"
@@ -402,7 +363,7 @@
         "Promethium"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol": {
       "lastModificationDate": 1648589177516,
       "contentHash": "3bea986b69e509a8d978ab2502a8bf2e",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
@@ -440,7 +401,7 @@
         "IERC721Upgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol": {
       "lastModificationDate": 1648589177516,
       "contentHash": "60093f8f135a0646b7193788efa26af3",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol",
@@ -476,7 +437,7 @@
         "IERC721ReceiverUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721MetadataUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721MetadataUpgradeable.sol": {
       "lastModificationDate": 1648589177516,
       "contentHash": "76212ca0265501d1eb3dd1175e6afca4",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721MetadataUpgradeable.sol",
@@ -514,7 +475,7 @@
         "IERC721MetadataUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
       "lastModificationDate": 1648589177505,
       "contentHash": "b70d2e0552ab1f44f7e44b5f8379c358",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
@@ -550,7 +511,7 @@
         "AddressUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
       "lastModificationDate": 1648589177505,
       "contentHash": "6200b84950eb05b4a92a39fd1d6e0f9b",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
@@ -588,7 +549,7 @@
         "ContextUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
       "lastModificationDate": 1648589177518,
       "contentHash": "f60b5fcbc57911b0fbc7a31a110f90bc",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
@@ -624,7 +585,7 @@
         "StringsUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol": {
       "lastModificationDate": 1648589177508,
       "contentHash": "5f2d8b81c0ff5bd2047b4846c20b998d",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
@@ -663,7 +624,7 @@
         "ERC165Upgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol": {
       "lastModificationDate": 1648589177515,
       "contentHash": "d6ecf203a5e72c845be9bbf2f304a289",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
@@ -699,7 +660,7 @@
         "IERC165Upgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
       "lastModificationDate": 1648589230659,
       "contentHash": "2bbd7c967533a10ea639727437eeccc9",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
@@ -740,7 +701,7 @@
         "ERC20Upgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol": {
       "lastModificationDate": 1648589177509,
       "contentHash": "8c58ae2b48b49da0634bc2db620540cf",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol",
@@ -780,7 +741,7 @@
         "ERC20BurnableUpgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
       "lastModificationDate": 1648589177515,
       "contentHash": "42737d1d02061ade4f91d1e08b45f835",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
@@ -816,7 +777,7 @@
         "IERC20Upgradeable"
       ]
     },
-    "/Users/nick/Documents/Tesi/Blockchain/Upgrade/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol": {
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol": {
       "lastModificationDate": 1648589177515,
       "contentHash": "9efcd5467a7f0bf533910ee8a267adb2",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
@@ -852,6 +813,45 @@
       ],
       "artifacts": [
         "IERC20MetadataUpgradeable"
+      ]
+    },
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1648589177517,
+      "contentHash": "11b77de3cb69dfc6b342ec87bd09cbdd",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.2",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
       ]
     }
   }

@@ -4,9 +4,9 @@ pragma solidity ^0.8.2;
 import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 
 contract Promethium is
     Initializable,
@@ -23,16 +23,15 @@ contract Promethium is
 
     mapping(bytes32 => bool) private _hashBook;
 
-    function initialize() public initializer {
+    function initialize(address newOwner) public initializer {
         __ERC20_init("Promethium", "PRM");
         __ERC20Burnable_init();
         __Pausable_init();
-        __Ownable_init();        
         _DECIMALS = 6;
         _MAX_NUMBER_OF_TOKENS_MINTABLE = 21000000000000;
-
+        
         //Delete the following lines for next upgrades
-        _mint(msg.sender, 100000 * 10**decimals());
+        _mint(newOwner, 100000 * 10**decimals());
     }
 
     function setAddressOfNFTContract(address addr) public onlyOwner() {
