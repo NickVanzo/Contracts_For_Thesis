@@ -7,6 +7,7 @@ import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol";
 
 contract Promethium is
     Initializable,
@@ -47,8 +48,16 @@ contract Promethium is
         _unpause();
     }
 
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
+    function mint(bytes32 _hash, bytes memory _signature) public {
+        require(totalSupply() <= _MAX_NUMBER_OF_TOKENS_MINTABLE, "Tokens cannot minted anymore, cap reached");
+        require(ECDSAUpgradeable.recover(_hash, _signature) == owner(), "This mint was not signed by the owner");
+        require(!_hashBook[_hash], "This code was already redeemed");
+        
+        _hashBook[_hash] = true;
+
+        string memory hashConverted = toHex(_hash);
+        uint amount = extractNumberOfTokensFromHash(hashConverted);
+        _mint(_msgSender(), amount);
     }
 
     function _beforeTokenTransfer(

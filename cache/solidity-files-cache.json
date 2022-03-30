@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/nick/Documents/Tesi/Contracts_For_Thesis/contracts/MonstersOnTheWayCards.sol": {
-      "lastModificationDate": 1648629440694,
+      "lastModificationDate": 1648629754669,
       "contentHash": "27810796bb68dec3ead6f9be5bc20a0b",
       "sourceName": "contracts/MonstersOnTheWayCards.sol",
       "solcConfig": {
@@ -321,8 +321,8 @@
       ]
     },
     "/Users/nick/Documents/Tesi/Contracts_For_Thesis/contracts/Promethium.sol": {
-      "lastModificationDate": 1648627858380,
-      "contentHash": "5e5bddd17e5171fcf9dbd9d0988509b7",
+      "lastModificationDate": 1648639681975,
+      "contentHash": "f57a3c377b74dd9ad6d03f3e237e7b8a",
       "sourceName": "contracts/Promethium.sol",
       "solcConfig": {
         "version": "0.8.2",
@@ -354,7 +354,8 @@
         "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol",
         "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
         "@openzeppelin/contracts-upgradeable/utils/math/SafeMathUpgradeable.sol",
-        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol"
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol"
       ],
       "versionPragmas": [
         "^0.8.2"
@@ -898,6 +899,44 @@
       ],
       "artifacts": [
         "MonstersOnTheWayCardsV2"
+      ]
+    },
+    "/Users/nick/Documents/Tesi/Contracts_For_Thesis/node_modules/@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol": {
+      "lastModificationDate": 1648589177507,
+      "contentHash": "5604aeb0260322a4059d100ddb0fa95b",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.2",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../StringsUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSAUpgradeable"
       ]
     }
   }

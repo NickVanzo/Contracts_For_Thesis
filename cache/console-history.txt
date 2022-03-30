@@ -1,3 +1,6 @@
+await ethers.utils.hexStripZeros('0x00000000000000000000000053b402da64ad6890492f4fc4e87873cf76a8f6e8')
+await ethers.provider.getStorageAt("0x198a84433369E807E6E9b6987C0934057647279C","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+clear
 await chi_deployed222.tokenURI(0)
 await chi_deployed222.tokenURI0()
 await chi_deployed222.safeMint("0xeac9852225Aa941Fa8EA2E949e733e2329f42195", "QmUVccUPYCnaJqT6NrDjfiScQdjTiBaBrFRDuFXV6snL3t")

@@ -1,8 +1,8 @@
 // scripts/prepare_upgrade.js
 async function main(deployer) {
-    const proxyAddress = '0x44a1ba61618d9218e6afe75ad1a14729e9325e5a';
+    const proxyAddress = '0x198a84433369E807E6E9b6987C0934057647279C';
    
-    const promethium_v2 = await ethers.getContractFactory("MonstersOnTheWayCardsV2");
+    const promethium_v2 = await ethers.getContractFactory("Promethium");
     console.log("Preparing upgrade...");
     const boxV2Address = await upgrades.upgradeProxy(proxyAddress, promethium_v2, { deployer });
     console.log("Updated contract at:", boxV2Address);
