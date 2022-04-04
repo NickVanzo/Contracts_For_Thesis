@@ -1,3 +1,11 @@
+addressLogic
+const addressLogic = await ethers.provider.getStorageAt("0x44a1ba61618d9218e6afe75ad1a14729e9325e5a","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+await addressLogic = await ethers.provider.getStorageAt("0x44a1ba61618d9218e6afe75ad1a14729e9325e5a","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+const d = await ethers.getContractFactory("MonstersOnTheWayCardsV2")
+await prom_d.setAddressOfNFTContract("0x44a1ba61618d9218e6afe75ad1a14729e9325e5a")
+await prom_d.setAddressOfNFTContract
+const prom_d = await prom.attach("0x198a84433369E807E6E9b6987C0934057647279C")
+const prom = await ethers.getContractFactory("Promethium")
 await ethers.utils.hexStripZeros('0x00000000000000000000000053b402da64ad6890492f4fc4e87873cf76a8f6e8')
 await ethers.provider.getStorageAt("0x198a84433369E807E6E9b6987C0934057647279C","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
 clear

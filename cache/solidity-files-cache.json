@@ -856,8 +856,8 @@
       ]
     },
     "/Users/nick/Documents/Tesi/Contracts_For_Thesis/contracts/MonstersOnTheWayCardsV2.sol": {
-      "lastModificationDate": 1648629864245,
-      "contentHash": "be30af6b789fa501a701c97127c88a98",
+      "lastModificationDate": 1649059581995,
+      "contentHash": "567d70e3eebbd9bc515cf43661fe6f3f",
       "sourceName": "contracts/MonstersOnTheWayCardsV2.sol",
       "solcConfig": {
         "version": "0.8.2",

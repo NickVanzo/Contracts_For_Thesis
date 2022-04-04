@@ -29,6 +29,7 @@ contract MonstersOnTheWayCardsV2 is
     uint256 private _balanceOfContract;
     string[] private _bookOfUris;
     address private _addressOfSmartContractOfTokens;
+    mapping(bytes32 => bool) private _hashBook;
 
     function initialize(address addressOfPromethium, address newOwner)
         public
@@ -54,6 +55,18 @@ contract MonstersOnTheWayCardsV2 is
 
     function unpause() public onlyOwner {
         _unpause();
+    }
+
+    function safeMintWithTicket(bytes32 _hash, bytes memory _signature, address to, string memory uri) public {
+        require(ECDSAUpgradeable.recover(_hash, _signature) == owner(), "This mint was not signed by the owner");
+        require(!_hashBook[_hash], "This code was already redeemed");
+        
+        _hashBook[_hash] = true;
+
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(to, tokenId);
+        _setTokenURI(tokenId, uri);
     }
 
     function safeMint(address to, string memory uri) external payable {
