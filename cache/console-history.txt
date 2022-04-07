@@ -1,3 +1,18 @@
+const hex = await ethers.provider.getStorageAt("0xFA02ced434f054E698587D537C0D013c378b686e","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+await ethers.provider.getStorageAt("0x08f3fA1b29FB17C53A84C9D074ce5DC4Cb2Fa7E6","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+const hex = await ethers.provider.getStorageAt("0x08f3fA1b29FB17C53A84C9D074ce5DC4Cb2Fa7E6","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+await ethers.provider.getStorageAt("0x08f3fA1b29FB17C53A84C9D074ce5DC4Cb2Fa7E6","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+const hex = await ethers.provider.getStorageAt("0x08f3fA1b29FB17C53A84C9D074ce5DC4Cb2Fa7E6","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+address
+const address = await ethers.utils.hexStripZeros(hex)
+await address = await ethers.utils.hexStripZeros(hex)
+const hex = await ethers.provider.getStorageAt("0x08f3fA1b29FB17C53A84C9D074ce5DC4Cb2Fa7E6","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+await ethers.utils.hexStripZeros(addressLogic)
+const addressLogic = await ethers.provider.getStorageAt("0x44a1ba61618d9218e6afe75ad1a14729e9325e5a","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+await ethers.utils.hexStripZeros(addressLogic)
+const addressLogic = await ethers.provider.getStorageAt("0x44a1ba61618d9218e6afe75ad1a14729e9325e5a","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
+await ethers.utils.hexStripZeros('0x000000000000000000000000a191fb242dea717ef13607fb483f5d6e8d6b3ed5')
+await ethers.provider.getStorageAt("0x44a1ba61618d9218e6afe75ad1a14729e9325e5a","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
 addressLogic
 const addressLogic = await ethers.provider.getStorageAt("0x44a1ba61618d9218e6afe75ad1a14729e9325e5a","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")
 await addressLogic = await ethers.provider.getStorageAt("0x44a1ba61618d9218e6afe75ad1a14729e9325e5a","0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc")

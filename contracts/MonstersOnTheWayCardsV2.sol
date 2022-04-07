@@ -30,6 +30,7 @@ contract MonstersOnTheWayCardsV2 is
     string[] private _bookOfUris;
     address private _addressOfSmartContractOfTokens;
     mapping(bytes32 => bool) private _hashBook;
+    uint256 private _circulatingSupply;
 
     function initialize(address addressOfPromethium, address newOwner)
         public
@@ -39,10 +40,19 @@ contract MonstersOnTheWayCardsV2 is
         __ERC721URIStorage_init();
         __Pausable_init();
         __ERC721Burnable_init();
-        __Ownable_init();
+        __Ownable_init();    
         _addressOfSmartContractOfTokens = addressOfPromethium;
         _fee = 3000000000000000;
         _addressRetriever = payable(newOwner);
+    }
+
+    //The 7 in the return was added because the variable was added with an upgrade
+    function getCirculatingSupply() public view returns (uint256) {
+        return _circulatingSupply + 7;
+    } 
+
+    function getLastTokenId() public view returns(CountersUpgradeable.Counter memory) {
+        return _tokenIdCounter;
     }
 
     function _baseURI() internal pure override returns (string memory) {
@@ -74,6 +84,7 @@ contract MonstersOnTheWayCardsV2 is
         _bookOfUris.push(uri);
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
+        _circulatingSupply.add(1);
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
     }
@@ -90,6 +101,7 @@ contract MonstersOnTheWayCardsV2 is
         _bookOfUris.push(uri);
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
+        _circulatingSupply.add(1);
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
     }
@@ -125,6 +137,7 @@ contract MonstersOnTheWayCardsV2 is
         internal
         override(ERC721Upgradeable, ERC721URIStorageUpgradeable)
     {
+        _circulatingSupply.sub(1);
         super._burn(tokenId);
     }
 
