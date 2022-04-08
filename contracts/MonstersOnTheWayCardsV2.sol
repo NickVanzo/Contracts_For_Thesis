@@ -45,6 +45,10 @@ contract MonstersOnTheWayCardsV2 is
         _addressRetriever = payable(newOwner);
     }
 
+    function lastIdMinted() public view returns(CountersUpgradeable.Counter memory){
+        return _tokenIdCounter;
+    }
+
     function _baseURI() internal pure override returns (string memory) {
         return "ipfs://";
     }
@@ -119,6 +123,10 @@ contract MonstersOnTheWayCardsV2 is
         return address(this).balance;
     }
 
+    function checkIfTokenExists(uint256 id) public view returns(bool) {
+        return _owners[id] != address(0);
+    }
+
     // The following functions are overrides required by Solidity.
 
     function _burn(uint256 tokenId)
@@ -164,4 +172,6 @@ contract MonstersOnTheWayCardsV2 is
     function setAddressOfTokenContract(address newAddress) public onlyOwner() {
         _addressOfSmartContractOfTokens = newAddress;
     }
+
+    
 }
