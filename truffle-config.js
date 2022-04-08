@@ -35,6 +35,12 @@ module.exports = {
    */
 
   networks: {
+    prova: {
+      url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.ALCHEMY_KEY}`,
+      accounts: {mnemonic: process.env.MNEMONIC_WALLET},
+      gas: 2100000,
+      gasPrice: 80000000000
+    }
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache-cli, geth or parity) in a separate terminal
@@ -71,6 +77,7 @@ module.exports = {
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
+    
   },
 
   // Set default mocha options here, use special reporters etc.
